@@ -35,7 +35,7 @@ def main():
             output_data.append((k,email))
 
     # output csv
-    pd.DataFrame( output_data , columns = ['預先指定的分組討論名稱', '電子郵件地址']).to_csv('webex.csv', index = False, encoding = 'utf-8')
+    pd.DataFrame( output_data , columns = ['預先指定的分組討論名稱', '電子郵件地址']).to_csv(webex_path, index = False, encoding = 'utf-8')
 
 if __name__ == '__main__':
     main()
